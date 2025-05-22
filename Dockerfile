@@ -7,6 +7,6 @@ RUN mvn clean package -DskipTests
 #Etapa 2
 FROM openjdk:11
 WORKDIR /app
-COPY --from=build /app/target/labfaker.jar labfaker.jar
+COPY --from=build /app/target/labfaker.jar ./labfaker.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar","/labfaker.jar"]
