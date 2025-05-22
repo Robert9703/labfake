@@ -9,4 +9,4 @@ FROM openjdk:11
 WORKDIR /app
 COPY --from=build /app/target/labfaker.jar ./labfaker.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar","/labfaker.jar"]
+ENTRYPOINT ["java", "-jar","./labfaker.jar"]
