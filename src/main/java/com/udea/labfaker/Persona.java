@@ -5,15 +5,17 @@ public class Persona {
     private String nombre;
     private String apellido;
     private String correo;
+    private int edad;
 
     public Persona() {
     }
 
-    public Persona(int id, String nombre, String apellido, String correo){
+    public Persona(int id, String nombre, String apellido, String correo, int edad){
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
+        this.edad = edad;
     }
 
     public int getId() {
@@ -46,5 +48,13 @@ public class Persona {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 }
